@@ -1,0 +1,59 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-container {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-box {
+  width: 48vw;
+  padding: 2%;
+  border: 1px solid black;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.register-input {
+  width: 30vw;
+  height: 5vh;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
+  height: 50px;
+}
+
+.error {
+  position: absolute;
+  text-align: left;
+  color: red;
+  left: 35%;
+  font-size: 11px;
+  bottom: 80%;
+}
+
+.label {
+  /* margin-right: 1%; */
+}
+
+.register-button {
+  display: block;
+  margin: 5px auto;
+  background-color: cadetblue;
+}
+
+.register-button:hover,
+.register-button:focus {
+  color: white;
+}

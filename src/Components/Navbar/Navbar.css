@@ -1,0 +1,55 @@
+.logo {
+  height: 100px;
+  width: 100px;
+  /* margin-top: -10px; */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-change {
+  padding: 5px;
+  min-width: 100px;
+  margin: 10px;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  background-color: #093250;
+  color: white;
+  border: 1.5px solid transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-change:hover {
+  background-color: white;
+  color: #093250;
+  border: 1.5px solid #093250;
+  border-radius: 4px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-space {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 10px;
+}
+
+.nav-text {
+  font-family: "Dancing Script", cursive;
+  font-size: large;
+  font-weight: bold;
+}
