@@ -201,8 +201,6 @@ const Dashboard = (props) => {
   // Edit the booking form
   const editBooking = (e, props) => {
     e.preventDefault();
-    console.log(e.target);
-
     client
       .updateBooking(
         props._id,

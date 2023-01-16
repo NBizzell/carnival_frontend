@@ -3,7 +3,6 @@ import { PieChart } from "react-minimal-pie-chart";
 import "./Piechart.css";
 
 const Piechart = (props) => {
-  console.log(props);
   const counter = (str) => {
     let type = str;
     return props.allBookings.reduce(

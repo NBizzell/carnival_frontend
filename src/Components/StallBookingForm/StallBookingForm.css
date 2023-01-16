@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .add-button {
@@ -32,7 +33,6 @@
   align-items: right;
   width: 28vw;
   height: 5vh;
-  margin: 10px 0;
 }
 
 .booking-textarea {

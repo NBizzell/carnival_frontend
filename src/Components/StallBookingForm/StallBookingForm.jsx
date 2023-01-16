@@ -22,7 +22,6 @@ const StallBookingForm = (props) => {
 
   //handle submit when the role is admin and stall holder
   const onSubmit = async (item) => {
-    console.log(item);
     if (props.role === "admin") {
       props.client.addBooking(
         item.businessName,
@@ -52,7 +51,6 @@ const StallBookingForm = (props) => {
   const checkUserDetails = async (item) => {
     const checkEmail = await props.client.getUserByEmail(item.email);
 
-    console.log(checkEmail.data);
     setCheckUserID(checkEmail.data._id);
     setCheckUserEmail(checkEmail.data.email);
 
@@ -73,18 +71,17 @@ const StallBookingForm = (props) => {
           <div className="booking-form-box">
             <div className="input-wrap">
               <label>Business name</label>
-              <div>
-                <input
-                  className="booking-input"
-                  type="text"
-                  {...register("businessName", {
-                    required: {
-                      value: true,
-                      message: "Business name is required",
-                    },
-                  })}
-                />
-              </div>
+
+              <input
+                className="booking-input"
+                type="text"
+                {...register("businessName", {
+                  required: {
+                    value: true,
+                    message: "Business name is required",
+                  },
+                })}
+              />
             </div>
 
             <div className="input-wrap">
