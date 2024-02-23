@@ -8,7 +8,7 @@ import "./Homepage.css";
 const HomePage = () => {
   return (
     <>
-/*      <Carousel className="image-slides">
+     {/* <Carousel className="image-slides">
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -35,8 +35,8 @@ const HomePage = () => {
 
           <Carousel.Caption></Carousel.Caption>
         </Carousel.Item>
-      </Carousel>
-*/
+      </Carousel> */}
+      
       <section className="section about">
         <h1 className="title about">About Us</h1>
         <p className="text">
